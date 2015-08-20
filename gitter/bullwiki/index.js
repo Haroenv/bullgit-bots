@@ -41,7 +41,7 @@ function listenToMessages () {
 
         if (text.match(config.wiki.regex)) {
 
-          var feedcontent =  'https://'+'github.com/bullgit/wiki/wiki/'+text.replace('/bwiki ','').replace(/ /g,"_");
+          var feedcontent =  'https://'+'github.com/bullgit/wiki/wiki/'+text.replace('/bwiki ','').replace(/ /g,"-");
 
           send(feedcontent, room);
 
